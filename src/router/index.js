@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
+import NotFound from '@/components/Not-found'
 
 Vue.use(Router)
 
@@ -9,18 +10,23 @@ Vue.use(Router)
   mode:"history",
   routes: [
     {
-      path: '/',
+      path: '/',//首页
       redirect:'/home'
     },
     {
-      path: '/home',
+      path: '/home',//首页
       name: 'home',
       component: Home
     },
     {
-      path: '/login',
+      path: '/login',//登录
       name: 'login',
       component: Login 
+    },
+    {
+      path: '*',//登录
+      name: 'not-found',
+      component: NotFound 
     }
   ]
 })
