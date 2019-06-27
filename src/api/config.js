@@ -1,3 +1,3 @@
 export default{
-    root:"全局请求头"
+    homepage:'/api/profiles/homepage'
 }

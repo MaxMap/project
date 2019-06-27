@@ -10,13 +10,14 @@ export default {
         }
     },
     created() {
-        console.log(api.root)
+        // console.log(api.root)
+        this.get()
     },
     methods: {
          get(){
             this.$http({
             method:'get',
-             url:'https://cnodejs.org/api/v1/topics',
+             url:this.HOST+api.homepage,
              data:{}
             }).then(function(res){
                 console.log(res)

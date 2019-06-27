@@ -6,6 +6,7 @@ import router from './router'
 import axios from 'axios'
 Vue.config.productionTip = false
 Vue.prototype.$http=axios
+Vue.prototype.HOST='/api'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
