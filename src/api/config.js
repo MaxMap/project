@@ -1,3 +1,3 @@
 export default {
-  homepage: '/game/init/init'
+  homepage: '/api/profiles/homepage'
 }
