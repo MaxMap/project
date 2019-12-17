@@ -1,3 +1,3 @@
-export default{
-    homepage:'/api/profiles/homepage'
+export default {
+  homepage: '/api/profiles/homepage'
 }
